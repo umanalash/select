@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width:900px;
+    height:500px;
+    display: grid;
+    background: lavender;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    display: grid;
+}
+li {
+    list-style-type:none;
+    width: 20px;
+    height: 20px;
+    margin:10px;
+    cursor: pointer;
+    border: 2px solid red;
+    text-indent: 20px;
+    font-size: 20px;
+    position:relative;
+}
+
+.tick-symbol {
+    color:green;
+    font-size: 20px;
+    position: absolute;
+    right:0px;
+    top:-3px;
+}

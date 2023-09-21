@@ -1,0 +1,9 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let item of items"
+      [ngClass]="{'Checked':isCheckeditems[item]}" (click)="toggleDisplay(item)" >{{item}} 
+      <span class="tick-symbol" *ngIf="isCheckeditems[item]">&#10004;</span>
+  </li>
+  </ul>
+</div>
+<app-childselect [selectedItems]="selectedItems"></app-childselect>
